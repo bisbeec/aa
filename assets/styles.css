@@ -2,4 +2,10 @@ header {
   background: red;
 }
 
+.hero {
+  background-image: url(images/banner-1.jpg);
+  height: 300px;
+  background-size: cover;
+}
+
 /*# sourceMappingURL=styles.css.map */
