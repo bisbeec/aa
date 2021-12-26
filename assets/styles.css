@@ -1,11 +1,62 @@
-header {
-  background: red;
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+body h1, body h2, body h3, body p, body a, body li {
+  letter-spacing: 1px;
+}
+body a {
+  transition: 0.3s all;
+  text-decoration: none !important;
+}
+
+header .logo-wrap {
+  display: block;
+  width: 100px;
+  margin-top: 10px;
+}
+header .logo-wrap img {
+  width: 100%;
+}
+header .nav {
+  margin-top: 30px;
+}
+header .nav p {
+  display: inline-block;
+  margin: 0 20px;
+}
+header .nav p:last-child {
+  margin-right: 0;
+}
+
+.btn {
+  background: steelblue;
+  color: #fff !important;
+}
+.btn:hover {
+  background: navy;
 }
 
 .hero {
   background-image: url(images/banner-1.jpg);
-  height: 300px;
+  height: 350px;
   background-size: cover;
+  display: flex;
+  align-items: Center;
+  justify-content: Center;
+}
+
+#cta {
+  padding: 0 15px;
+  text-align: Center;
+}
+#cta h1 {
+  text-transform: capitalize;
+  margin-bottom: 50px;
 }
 
 /*# sourceMappingURL=styles.css.map */

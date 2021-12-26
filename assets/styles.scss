@@ -1,10 +1,62 @@
-header {
-	background: red;
+*, *::before, *::after {
+	box-sizing: border-box;
 }
 
+body {
+	margin: 0;
+	padding: 0;
+	h1, h2, h3, p, a, li {
+		letter-spacing: 1px;
+	}
+	a {
+		transition: .3s all;
+		text-decoration: none !important;
+	}
+}
+
+header {
+	.logo-wrap {
+		display: block;
+		width: 100px;
+		margin-top: 10px;
+		img {
+			width: 100%;
+		}
+	}
+	.nav {
+		margin-top: 30px;
+		p {
+			display: inline-block;
+			margin: 0 20px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+.btn {
+	background: steelblue;
+	color: #fff !important;
+	&:hover {
+		background: navy;
+	}
+}
 
 .hero {
 	background-image: url(images/banner-1.jpg);
-	height: 300px;
+	height: 350px;
 	background-size: cover;
+	display: flex;
+	align-items: Center;
+	justify-content: Center;
+}
+
+#cta {
+	padding: 0 15px;
+	text-align: Center;
+	h1 {
+		text-transform: capitalize;
+		margin-bottom: 50px;
+	}
 }
