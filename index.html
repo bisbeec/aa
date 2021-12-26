@@ -14,7 +14,7 @@
 <body class="body">
 	
 
-	<header class="header"></header>
+	<header class="headerc cms-editable" id="header"></header>
 	
 	<main class="main">
 		<section class="hero">
@@ -28,6 +28,30 @@
 		<section class="section">
 			<div class="container">
 				<h1>Yay for things!</h1>
+			</div>
+		</section>
+		<section class="section">
+			<div class="container">
+				<form name="contact" method="post" data-netlify="true" id="contact-form">
+					<p>
+						<label>Your name:
+							<input type="text" name="name"/>
+						</label>
+					</p>
+					<p>
+						<label>Your email:
+							<input type="email" name="email"/>
+						</label>
+					</p>
+					<p>
+						<label>
+							<textarea name="message"></textarea>
+						</label>
+					</p>
+					<p>
+						<button type="submit">Send</button>
+					</p>
+				</form>
 			</div>
 		</section>
 	</main>
